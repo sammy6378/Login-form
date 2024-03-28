@@ -7,32 +7,22 @@ const box = document.getElementById('form2Example3c');
 const takeValue = enter.value;
 
 const fNameInputs = document.querySelectorAll('.view');
-const takeInputs = {};
-
+const show = document.querySelector('.verify');
 
 function load(){
 
 btns.addEventListener('click', () => {
-    fNameInputs.forEach((input, index) => {
-        if (input.value === '') {
-            alert('Please fill all the fields!');
-            return;
-        }
-        takeInputs[index] = input.value;
-        const show = document.querySelector('.verify');
-        show.style.display = 'block';
-        show.innerHTML = 'Details Verification on the process.';
 
-        setTimeout(() => {
-            show.style.display = 'none';
-          }, 4000);
-        input.value = '';        
-    });
+            show.classList.toggle("details");
 
-    console.log(takeInputs);
-});
+            setTimeout(() => {
+                show.classList.remove("details");
+              }, 3000);
+            input.value = '';        
+            }
+        )};
+  
 
-}
 
 load();
 
