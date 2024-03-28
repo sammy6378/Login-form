@@ -131,6 +131,7 @@
     border-radius: 10px;
     border-bottom: 5px solid green;
     width: 20%;
+    max-width: 100%;
     text-align: center;
     color: green;
     z-index: 900;
@@ -197,6 +198,7 @@
     }
     .verify{
         width: max-content;
+        max-width: 100%;
     }
 }
 
