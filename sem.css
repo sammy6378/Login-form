@@ -197,7 +197,7 @@
         display: none;
     }
     .verify{
-        width: max-content;
+        width:80%;
         max-width: 100%;
     }
 }
